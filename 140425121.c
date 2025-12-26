@@ -266,17 +266,17 @@ void initialize_cat(Cat *cat){
 
   //първа проверка - глад
   if (cat->hunger >=10) {
-    printf("OOH! YOur cat starved!\n");
+    printf("OOH! Your cat starved!\n");
     return true; //край на играта
   }
 
-  //втора проверка - ако е трърде тъжна
+  //втора проверка - ако е твърде тъжна
   if (cat->happiness <=0) {
-    printf("OOPS! YOUR cat became 2 sad and ran away!\n");
+    printf("OOPS! Your cat became 2 sad and ran away!\n");
     return true; //край на играта
   }
 
-  //трета проверка - ако е трвъде болна
+  //трета проверка - ако е твърде болна
   if (cat->health <=0) {
     printf("Sadly, your cat became 2 sick and died! Now u no longer own a pet:((\n");
     return true;//край на играта
